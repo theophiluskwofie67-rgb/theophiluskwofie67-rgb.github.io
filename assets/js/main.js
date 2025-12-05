@@ -1,4 +1,4 @@
-// Dark mode toggle with localStorage
+// Dark mode toggle with localStorage + active nav highlighting
 (function () {
   const html = document.documentElement;
   const toggleBtn = document.querySelector("[data-theme-toggle]");
@@ -17,12 +17,10 @@
       toggleBtn.textContent = next === "light" ? "Dark mode" : "Light mode";
     });
 
-    // initialize label
     const current = html.getAttribute("data-theme") || "light";
     toggleBtn.textContent = current === "light" ? "Dark mode" : "Light mode";
   }
 
-  // highlight active nav link based on body data-page
   const page = document.body.getAttribute("data-page");
   if (page) {
     const link = document.querySelector(`.nav-links a[data-page="${page}"]`);
