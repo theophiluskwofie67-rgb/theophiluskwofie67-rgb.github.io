@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Research | Theophilus Kwofie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="page" data-page="research">
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="nav-name">THEOPHILUS&nbsp;KWOFIE</div>
+        <div class="nav-title">Mathematical Modeling &amp; Public Health</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="research.html" data-page="research">Research</a>
+        <a href="publications.html" data-page="publications">Publications</a>
+        <a href="teaching.html" data-page="teaching">Teaching</a>
+        <a href="cv.html" data-page="cv">CV</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </div>
+      <div class="theme-toggle">
+        <button type="button" data-theme-toggle></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-heading">Research</h1>
+        <p class="section-subtitle">
+          I use mathematical modeling and machine learning to understand how individual behaviour,
+          intervention strategies, and structural conditions combine to shape population health.
+        </p>
+
+        <div class="card">
+          <h3>Research statement</h3>
+          <p>
+            My work sits at the intersection of mathematical epidemiology, applied analysis, and data science.
+            I develop mechanistic models that capture key biological and behavioural processes, and I integrate
+            these models with modern statistical and machine learning approaches to guide decision-making in
+            public and population health.
+          </p>
+          <p>
+            A recurring theme in my research is the importance of <em>trustworthy</em> and <em>interpretable</em>
+            models in settings where data are limited, noisy, or structurally biased. I am interested in how
+            qualitative model structure, parameter uncertainty, and social context interact to produce complex
+            dynamics, and in how we can design interventions that are effective, equitable, and robust to
+            modelling assumptions.
+          </p>
+          <p>
+            Methodologically, I work with compartmental and hybrid mechanistic–data-driven models, optimal
+            control, sensitivity and uncertainty analysis (including LHS–PRCC pipelines), and numerical simulation.
+            Substantively, my projects span infectious diseases, noncommunicable conditions such as obesity, and
+            social phenomena such as crime, gang activity, and substance use, viewed through the lens of public
+            health.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Current research themes</h3>
+          <ul class="simple-list">
+            <li>
+              <strong>Hybrid mechanistic–machine learning models for health systems.</strong>
+              Linking compartmental or agent-based models with ML components to improve prediction and scenario
+              analysis, while retaining interpretability and mechanistic insight.
+            </li>
+            <li>
+              <strong>Interventions, behaviour, and compliance.</strong>
+              Studying how testing, isolation, treatment adherence, and fear-based deterrence influence disease
+              transmission, crime dynamics, and other outcomes, using optimal control and cost-effectiveness analysis.
+            </li>
+            <li>
+              <strong>Uncertainty and sensitivity in complex models.</strong>
+              Quantifying uncertainty in parameters and initial conditions, and identifying key leverage points for
+              policy through global sensitivity analysis.
+            </li>
+            <li>
+              <strong>Equity and heterogeneity.</strong>
+              Exploring how heterogeneity in risk, access, and behaviour shapes the impact of public health
+              interventions and predictive models.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Tools &amp; computational practice</h3>
+          <div class="pill-row">
+            <span class="pill">Deterministic ODE/PDE modeling</span>
+            <span class="pill">Compartmental epidemiological models</span>
+            <span class="pill">Hybrid mechanistic–ML pipelines</span>
+            <span class="pill">Optimal control &amp; cost-effectiveness</span>
+            <span class="pill">Sensitivity analysis (LHS–PRCC)</span>
+            <span class="pill">Python · MATLAB · R</span>
+            <span class="pill">HPC workflows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>&copy; <span id="year"></span> Theophilus Kwofie.</div>
+      <div class="muted">Research · Mathematical Modeling &amp; Public Health</div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
